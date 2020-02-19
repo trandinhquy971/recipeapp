@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Recipe Application</string>
+    <string name="filter_title">Filter by: </string>
+    <string name="name_title">Name: </string>
+    <string name="step_title">Steps: </string>
+    <string name="type_title">Type: </string>
+    <string name="ingredient_title">Ingredients: </string>
+    <string name="fulfill_alert">Please fill all fields and choose image! </string>
+    <string name="pick_image_alert">You haven\'t picked image! </string>
 </resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="recipe"
+            type="com.example.recipeapplication.entity.Recipe" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardContainer"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/item_height"
+                android:layout_height="@dimen/item_height"
+                android:img="@{recipe.img}"
+                android:scaleType="fitXY">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_text_margin_left"
+                android:text="@{recipe.name}"
+                android:textSize="@dimen/item_text_size"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

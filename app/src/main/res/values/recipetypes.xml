@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="recipe_types">
+        <item>bake</item>
+        <item>boil</item>
+        <item>fry</item>
+        <item>steam</item>
+        <item>roast</item>
+    </string-array>
+</resources>
